@@ -8,7 +8,7 @@
         xmlns:vm="clr-namespace:MVVMSamples.ViewModels"
         xmlns:conv="clr-namespace:MVVMSamples.Converters"
         mc:Ignorable="d"
-        Title="MainView" Height="300" Width="700">
+        Title="{Binding Title}" Height="300" Width="700">
     <Window.Resources>
         <DataTemplate DataType="{x:Type vm:EditPersonViewModel}">
             <v:EditPersonView/>
