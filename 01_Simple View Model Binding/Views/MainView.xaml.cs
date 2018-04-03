@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Simple_View_Model_Binding.ViewModels;
+using MVVMSamples.ViewModels;
 
-namespace Simple_View_Model_Binding.Views
+namespace MVVMSamples.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

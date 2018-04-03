@@ -11,9 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using CommandBinding.ViewModels;
+using MVVMSamples.ViewModels;
 
-namespace CommandBinding.Views
+namespace MVVMSamples.Views
 {
     /// <summary>
     /// Interaction logic for MainView.xaml

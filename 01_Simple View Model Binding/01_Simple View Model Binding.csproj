@@ -7,7 +7,7 @@
     <ProjectGuid>{E4BB994E-D6E3-4338-94D4-2B416742C743}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Simple_View_Model_Binding</RootNamespace>
+    <RootNamespace>MVVMSamples</RootNamespace>
     <AssemblyName>Simple View Model Binding</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

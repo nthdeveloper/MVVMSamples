@@ -4,9 +4,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Simple_View_Model_Binding.Models;
+using MVVMSamples.Models;
 
-namespace Simple_View_Model_Binding.ViewModels
+namespace MVVMSamples.ViewModels
 {
     public class MainViewModel
     {

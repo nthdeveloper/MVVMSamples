@@ -7,7 +7,7 @@
     <ProjectGuid>{E7564B0F-2D17-4826-AC6B-9427D14739E3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CommandBinding</RootNamespace>
+    <RootNamespace>MVVMSamples</RootNamespace>
     <AssemblyName>CommandBinding</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

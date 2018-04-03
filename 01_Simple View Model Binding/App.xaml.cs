@@ -5,10 +5,10 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using Simple_View_Model_Binding.Views;
-using Simple_View_Model_Binding.ViewModels;
+using MVVMSamples.Views;
+using MVVMSamples.ViewModels;
 
-namespace Simple_View_Model_Binding
+namespace MVVMSamples
 {
     /// <summary>
     /// Interaction logic for App.xaml

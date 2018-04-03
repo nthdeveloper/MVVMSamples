@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using CommandBinding.Models;
-using CommandBinding.Utils;
-using MedicalRecorder.Commands;
+using MVVMSamples.Models;
+using MVVMSamples.Utils;
+using MVVMSamples.Commands;
 
-namespace CommandBinding.ViewModels
+namespace MVVMSamples.ViewModels
 {
     public class MainViewModel
     {

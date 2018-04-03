@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace Simple_View_Model_Binding.Converters
+namespace MVVMSamples.Converters
 {
     [ValueConversion(typeof(DateTime), typeof(string))]
     public class DateToStringConverter : IValueConverter
