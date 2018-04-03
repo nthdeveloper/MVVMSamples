@@ -1,0 +1,60 @@
+﻿<Window x:Class="MVVMSamples.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMSamples.Views"
+        xmlns:v="clr-namespace:MVVMSamples.Views"
+        xmlns:vm="clr-namespace:MVVMSamples.ViewModels"
+        xmlns:conv="clr-namespace:MVVMSamples.Converters"
+        mc:Ignorable="d"
+        Title="MainView" Height="300" Width="700">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:EditPersonViewModel}">
+            <v:EditPersonView/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <ListView ItemsSource="{Binding PersonList}" SelectedItem="{Binding SelectedPerson}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="{Binding NameColumnHeader}" Width="130">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Name}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="{Binding SurnameColumnHeader}" Width="130">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Surname}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="{Binding BirthDateColumnHeader}" Width="130">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=BirthDate, Converter={x:Static conv:DateToStringConverter.Instance}, Mode=OneWay}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Border Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderThickness="2" BorderBrush="Black" CornerRadius="3">
+            <ContentPresenter Content="{Binding EditingPerson}" Margin="5"/>
+        </Border>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Command="{Binding RemoveCommand}" Content="{Binding RemoveCommand.Label}" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
