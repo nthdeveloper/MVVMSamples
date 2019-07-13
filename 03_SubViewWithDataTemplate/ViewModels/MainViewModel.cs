@@ -81,7 +81,7 @@ namespace MVVMSamples.ViewModels
                 MessageBoxHelper.Show("Select a person to remove!");
             else
             {
-                var _questionResult = MessageBoxHelper.Show("Select a person to remove!","", System.Windows.MessageBoxButton.YesNo);
+                var _questionResult = MessageBoxHelper.Show("Do you want to remove the selected person?", "", System.Windows.MessageBoxButton.YesNo);
                 if(_questionResult == System.Windows.MessageBoxResult.Yes)
                 {
                     this.PersonList.Remove(this.SelectedPerson);
